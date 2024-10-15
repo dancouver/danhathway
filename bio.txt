@@ -1,0 +1,12 @@
+static/danh.gif
+About Me
+Welcome to my developer site. I started my career in programming at IBM in the early 90s and later worked with GEC Plessey writing programs for the telecoms infrastructure.
+
+My first degree is in Computer Science and I have always been involved in technology companies, large and small. In the late 90s, I moved to the commercial side of technology, holding various roles in sales, marketing and operations.
+
+My love of programming and in particular data science never diminished and throughout my mid career, I have worked on many quantitative and qualitative business data projects.
+
+And now, I want to create and deploy data analytics with the power and flexibility offered by Python to the developer community and my clients!
+
+
+

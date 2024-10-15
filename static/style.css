@@ -1,0 +1,297 @@
+/* Additional styles */
+
+
+body {
+    background-color: #ffffff; /* Light background color */
+    font-family: 'Open Sans', sans-serif; /* Fallbacks to sans-serif */
+}
+
+
+h3 {
+    border-bottom: 1px solid #ccc; /* Adds a border below headings */
+    padding-bottom: 8px;
+    font-family: 'Roboto Slab', serif; /* Fallbacks to serif */
+    color: #424769
+}
+
+p {
+    color: #7077a1; /* Applies text color for paragraphs */
+}
+.navbar {
+    background-color: #2d3250;
+}
+
+
+.navbar-brand img {
+    color: #ffffff;
+    height: 40px; /* Adjusts logo height */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Changes link colors in navbar */
+}
+
+.navbar .container-fluid {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+
+.navbar-collapse {
+    display: flex !important; /* Ensure flexbox is used */
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* Footer styles */
+footer {
+    background-color: #2d3250 !important;
+    padding: 20px 0;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer .fa-stack {
+    margin-right: 10px;
+}
+
+footer .small {
+    color: #ffffff;
+}
+
+.fa-inverse {
+    color: #424769 !important; /* Use !important to ensure it overrides default styles */
+}
+.bg-dark {
+    background-color: #2d3250 !important; /* Remove the background color */
+}
+
+.custom-circle-icon {
+    width: 2em;  /* Adjust this value to match the size of your Font Awesome icons */
+    height: 2em; /* Adjust this value to match the size of your Font Awesome icons */
+    display: block;
+    margin: auto;
+}
+
+
+/* portfolio cards */
+.portfolio {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensures all content inside aligns to the left */
+    position: relative;
+    border-right: 1px solid #d3d3d3; /* Thin grey vertical line */
+}
+
+.portfolio:not(:last-child) {
+    border-right: 1px solid #d3d3d3; /* Apply vertical line to all but the last item */
+}
+
+.portfolio-img-top {
+    max-height: 12.5vh; /* 1/8th of the viewport height */
+    width: auto;
+    object-fit: contain; /* Ensures the entire image is visible without being cut off */
+    margin-bottom: 15px; /* Space below the image */
+    display: block; /* Ensures the image is treated as a block element */
+    align-self: flex-start; /* Ensures the image aligns to the left */
+}
+
+.portfolio-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns text and buttons to the left */
+}
+
+.portfolio-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.portfolio-title::before {
+    content: "-----"; /* Separator line */
+    display: block;
+    color: #d3d3d3; /* Grey color */
+    font-size: 1rem; /* Adjust font size as needed */
+    text-align: center; /* Center the separator line */
+    position: absolute;
+    top: -25px; /* Position above the title */
+    left: 0;
+    right: 0;
+}
+
+.portfolio-text {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 4.5em;
+    margin-bottom: 15px;
+    text-align: left; /* Ensures text alignment is left */
+}
+
+.btn-primary {
+    align-self: flex-start;
+    margin-top: auto;
+    margin-bottom: 20px;
+    background-color: #f6b17a; /* Sets the button background color */
+    border-color: #f6b17a; /* Matches the border color to the background */
+    color: white; /* Sets the text color to white for contrast */
+}
+
+.btn-primary:hover {
+    background-color: #e29d68; /* Darker shade for hover effect */
+    border-color: #e29d68; /* Darker border on hover */
+}
+
+/* Portfolio styles */
+.portfolio {
+    height: 100%;
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: flex-start; /* Ensure items are aligned at the top */
+    position: relative;
+    border-right: 1px solid #d3d3d3; /* Thin grey vertical line */
+    margin-bottom: 20px; /* Space between portfolio items */
+    padding-right: 10px; /* Padding on the right for the separator */
+}
+
+.portfolio:not(:last-child) {
+    border-right: 1px solid #d3d3d3; /* Apply vertical line to all but the last item */
+}
+
+.portfolio:nth-child(3n+1) {
+    border-right: none; /* Remove vertical line from the first item in each row */
+}
+
+.portfolio-img-top {
+    max-height: 12.5vh; /* 1/8th of the viewport height */
+    width: auto;
+    object-fit: contain; /* Ensures the entire image is visible without being cut off */
+    margin-right: 15px; /* Space between the image and the title */
+}
+
+.portfolio-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+}
+
+.portfolio-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.portfolio-title::before {
+    content: "-----"; /* Separator line */
+    display: block;
+    color: #d3d3d3; /* Grey color */
+    font-size: 1rem; /* Adjust font size as needed */
+    text-align: center; /* Center the separator line */
+    position: absolute;
+    top: -15px; /* Position above the title */
+    left: 0;
+    right: 0;
+}
+
+.portfolio-text {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 4.5em;
+    margin-bottom: 15px;
+    text-align: left; /* Ensures text alignment is left */
+}
+
+.btn-primary {
+    align-self: flex-start;
+    margin-top: auto;
+    margin-bottom: 20px;
+    background-color: #f6b17a; /* Sets the button background color */
+    border-color: #f6b17a; /* Matches the border color to the background */
+    color: white; /* Sets the text color to white for contrast */
+}
+
+.btn-primary:hover {
+    background-color: #e29d68; /* Darker shade for hover effect */
+    border-color: #e29d68; /* Darker border on hover */
+}
+
+
+
+
+.flip {
+  -webkit-perspective: 800px;
+          perspective: 800px;
+        position: relative;
+        text-align: left !important;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+}
+.flip .card {
+    width: 270px;
+    height: 178px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background-color: #fff;
+
+}
+.flip .card .face {
+  -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+   z-index: 2;
+}
+.flip .card .front {
+   position: absolute;
+   width: 270px;
+   z-index: 1;
+}
+.flip .card .front img{
+  width: 270px;
+  height: 100%;
+}
+.flip .card .img {
+   position: relative;
+   width: 270px;
+   height: 178px;
+   z-index: 1;
+   border: 2px solid #000;
+}
+.flip .card .back {
+  padding-top: 5%;
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+  position: absolute;
+
+}
+.inner{
+  margin:0px !important;
+  width: 270px;
+}
+

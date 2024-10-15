@@ -1,0 +1,94 @@
+{% include "header.html" %}
+
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12 col-md-3">
+            <h3>About Dan Hathway</h3>
+            <p>I offer Python development services and specialize in data science for businesses.</p>
+            <p>This site is intended to showcase my growing portfolio of Python work.</p>
+            <p>The bottom-right link in the footer is a link to my existing data analytics business.</p>
+            <p>Contact me for inquiries!</p>
+        </div>
+        <div class="col-12 col-md-9">
+            <h3>Offering</h3>
+            <p>I can transform your data analytics business problems into elegant one-off or repeatable web-based solutions. </p>
+            <p>I began my career as a commercial programmer for 5 years, then moved into the business side of technology.</p>
+            <p>Over the past ten years, I have been involved with the delivery of data analytic projects and company operations.</p>
+            <p>Recently, I completed a Python programming course and am now able to provide technical expertise combined with a wealth of business experience.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-secondary">Let me know what you need</a>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-4">
+            <div class="flip">
+                <div class="card">
+                    <div class="face front">
+                        <div class="inner">
+                            <img src="{{ url_for('static', filename='advisory.png') }}" alt="advisory">
+                        </div>
+                    </div>
+                    <div class="face back">
+                        <div class="inner text-center">
+                            <h3>Advisory</h3>
+                            <p>Get additional business insights from my years of operational and commercial experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="flip">
+                <div class="card">
+                    <div class="face front">
+                        <div class="inner">
+                            <img src="{{ url_for('static', filename='programming.png') }}" alt="programming">
+                        </div>
+                    </div>
+                    <div class="face back">
+                        <div class="inner text-center">
+                            <h3>Python Programming</h3>
+                            <p>Let me write elegant, robust and well-documented code for your project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-4">
+            <div class="flip">
+                <div class="card">
+                    <div class="face front">
+                        <div class="inner">
+                            <img src="{{ url_for('static', filename='analytics.png') }}" alt="data analytics">
+                        </div>
+                    </div>
+                    <div class="face back">
+                        <div class="inner text-center">
+                            <h3>Data analytics</h3>
+                            <p>Get the true meaning from complex data sets using a variety of tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        &nbsp;
+    </div>
+
+
+</div>
+
+<!--<script src="/bootstrap.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+        });
+    });
+</script>
+
+{% include "footer.html" %}

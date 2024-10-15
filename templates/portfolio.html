@@ -1,0 +1,30 @@
+{% include 'header.html' %}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Portfolio</h1>
+    <div class="row">
+        {% for entry in entries %}
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="portfolio mb-4">
+                    {% if entry.image_url %}
+                        <img src="{{ entry.image_url }}" class="portfolio-img-top" alt="{{ entry.title }}" onerror="this.style.display='none';">
+                    {% endif %}
+                    <div class="portfolio-body">
+                        {% if entry.title %}
+                            <h5 class="portfolio-title">{{ entry.title }}</h5>
+                        {% endif %}
+                        {% if entry.summary %}
+                            <p class="portfolio-text">{{ entry.summary|safe }}</p> <!-- Use safe filter -->
+                        {% endif %}
+                        {% if entry.hyperlink and entry.hyperlink != '#' %}
+                            <a href="{{ entry.hyperlink }}" class="btn btn-primary">View Project</a>
+                            <br> <!-- Adds a blank line below the button -->
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include 'footer.html' %}
